@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { Menu, Segment } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react';
 
-export default class MenuExampleInvertedSecondary extends Component {
-  state = { activeItem: 'home' }
+export default class MenuExampleStackable extends Component {
+  state = {}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -11,18 +11,24 @@ export default class MenuExampleInvertedSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Segment inverted>
-        <Menu inverted pointing secondary>
-          <Menu.Item as={Link} name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-          <Menu.Item
-            position='right'
-            as={Link}
-            name='Login'
-            active={activeItem === 'Login'}
-            onClick={this.handleItemClick}
-          />
-        </Menu>
-      </Segment>
+      <Menu stackable>
+        <Menu.Item>
+          <i class="fas fa-child"></i>
+        </Menu.Item>
+
+        <Menu.Item
+          position='right'
+          name='testimonials'
+          active={activeItem === 'testimonials'}
+          onClick={this.handleItemClick}
+        >
+          Our Mission
+        </Menu.Item>
+
+        <Menu.Item name='sign-in' active={activeItem === 'sign-in'} onClick={this.handleItemClick}>
+          Login
+        </Menu.Item>
+      </Menu>
     )
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-
+import { Button } from 'semantic-ui-react';
 //css
 import LandingPageImage from '../landingPageImage.css'
 const Header = props => {
@@ -26,6 +26,9 @@ const Header = props => {
 
       </div>
 
+      <Link to={`//`}>
+      <a href="/" className="btn btn-white btn-animated"> Login </a>
+      </Link>
     </header>
 
   </div>
