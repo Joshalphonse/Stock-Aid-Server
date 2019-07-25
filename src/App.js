@@ -8,7 +8,7 @@ function App() {
     <div>
       <Switch>
       <Route
-            path="/home"
+            path="/"
             render={ () => <Home /> } />
       </Switch>
 
