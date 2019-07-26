@@ -8,7 +8,7 @@ const Home = props => {
   return (
     <div>
     <Navbar/>
-        <LandingPageImage/>
+    <LandingPageImage/>
     </div>
   );
 };

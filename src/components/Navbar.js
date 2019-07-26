@@ -20,8 +20,7 @@ export default class MenuExampleStackable extends Component {
           position='right'
           name='testimonials'
           active={activeItem === 'testimonials'}
-          onClick={this.handleItemClick}
-        >
+          onClick={this.handleItemClick}>
           Our Mission
         </Menu.Item>
 

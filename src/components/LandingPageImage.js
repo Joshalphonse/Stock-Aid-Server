@@ -2,7 +2,7 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Button } from 'semantic-ui-react';
 //css
-import landingPageImage from '../landingPageImage.css'
+import landingPageImage from '/Users/shivanibrijmohan/Development/code/shivHappens/Stockaid/Stock-Aid-Server/src/styles/landingPageImage.css'
 const Header = props => {
   return (
     <div>

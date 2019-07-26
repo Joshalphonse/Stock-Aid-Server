@@ -1,12 +1,13 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { Button, Checkbox, Form } from 'semantic-ui-react';
+import { Button, Form } from 'semantic-ui-react';
 
 
-import form from '../form.css'
+import login from '/Users/shivanibrijmohan/Development/code/shivHappens/Stockaid/Stock-Aid-Server/src/styles/login.scss'
+
 
 const Login = () => (
-  <div className="login">
+  <div className="login" id="login">
     <Form>
       <label className="welcome">Welcome to Stockaid</label>
       <Form.Field>
