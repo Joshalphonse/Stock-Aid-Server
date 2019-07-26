@@ -2,7 +2,7 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Button } from 'semantic-ui-react';
 //css
-import LandingPageImage from '../landingPageImage.css'
+import landingPageImage from '../landingPageImage.css'
 const Header = props => {
   return (
     <div>
@@ -22,12 +22,10 @@ const Header = props => {
         <h1 className="heading-primary">
           <span className="heading-primary-main">Stockaid</span>
         </h1>
-
-
       </div>
 
-      <Link to={`//`}>
-      <a href="/" className="btn btn-white btn-animated"> Login </a>
+      <Link to={`/login`}>
+      <a href="/login" className="btn btn-white btn-animated"> Login </a>
       </Link>
     </header>
 
